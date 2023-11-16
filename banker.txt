@@ -1,0 +1,74 @@
+ubuntu@ubuntu-HP-dx2480-MT-FH295PA:~$ gcc banker.c
+ubuntu@ubuntu-HP-dx2480-MT-FH295PA:~$ ./a.out
+------------===============Banker`s Algorithm====================------------
+
+ Enter no. of processes : 5
+Enter no. of resource Types : 4
+Enter no. of available resources of each type: 
+Resource-A : 1
+Resource-B : 5 
+Resource-C : 2
+Resource-D : 0
+Enter Maximum Demand of each process : 
+For Process P0 : 0 0 1 2
+For Process P1 : 1 7 5 0
+For Process P2 : 2 3 5 6
+For Process P3 : 0 6 5 2
+For Process P4 : 0 6 5 6
+Enter Allocation of each process : 
+For Process P0 : 0 0 1 2
+For Process P1 : 1 0 0 0
+For Process P2 : 1 3 5 4 
+For Process P3 : 0 6 3 2
+For Process P4 : 0
+0 1 4
+Calculation of Need matrix
+--------Need Matrix---------
+0000
+0750
+1002
+0020
+0642
+***************MENU*************
+	1 : Safe Sequence
+	2 : Resource Request
+	3 : Exit
+Enter your choice : 1
+Process P[0] over
+Finish[TFFFF]-----------------------
+Process P[2] over
+Finish[TFTFF]-----------------------
+Process P[3] over
+Finish[TFTTF]-----------------------
+Process P[4] over
+Finish[TFTTT]-----------------------
+Process P[1] over
+Finish[TTTTT]-----------------------
+System is in safe state
+<P0,P2,P3,P4,P1,>
+***************MENU*************
+	1 : Safe Sequence
+	2 : Resource Request
+	3 : Exit
+Enter your choice : 2
+Enter process no : 1
+Enter the request : 0 4 2 0
+Process P[0] over
+Finish[TFFFF]-----------------------
+Process P[2] over
+Finish[TFTFF]-----------------------
+Process P[3] over
+Finish[TFTTF]-----------------------
+Process P[4] over
+Finish[TFTTT]-----------------------
+Process P[1] over
+Finish[TTTTT]-----------------------
+System is in safe state
+<P0,P2,P3,P4,P1,>
+Process P1 is allocated it`s resources
+***************MENU*************
+	1 : Safe Sequence
+	2 : Resource Request
+	3 : Exit
+Enter your choice : 
+
